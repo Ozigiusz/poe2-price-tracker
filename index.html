@@ -7,14 +7,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>POE2 Price Tracker</h1>
-    </header>
-    <main>
-        <input type="text" id="itemSearch" placeholder="Wyszukaj przedmiot">
-        <button id="searchButton">Szukaj</button>
-        <div id="result"></div>
-    </main>
+    <div class="container">
+        <h1>POE Price Tracker</h1>
+        <input type="text" id="itemName" placeholder="Wpisz nazwę przedmiotu">
+        <button onclick="searchItem()">Szukaj</button>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Nazwa przedmiotu</th>
+                    <th>Cena</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody id="results">
+                <!-- Tutaj będą wyniki -->
+            </tbody>
+        </table>
+    </div>
     <script src="script.js"></script>
 </body>
+
 </html>
